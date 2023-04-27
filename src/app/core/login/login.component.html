@@ -1,0 +1,14 @@
+<div style="display: flex; justify-content: center;">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+  <div class="form-group">
+    <label for="username" class="m">Username:</label>
+    <input type="text" class="form-control " id="username" formControlName="username" placeholder="Enter your username">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="password" class="m">Password:</label>
+    <input type="password" class="form-control " id="password" formControlName="password" placeholder="Enter your password">
+  </div><br>
+  <button type="submit" class="btn btn-primary " routerLink="/home">Login</button>
+</form>
+</div>

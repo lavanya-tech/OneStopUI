@@ -1,0 +1,19 @@
+.nav-left {
+  background-color: rgb(182, 195, 196);
+  top: 80px;
+  padding-top: 10px;
+  justify-content: space-between;
+  display: flex;
+  text-shadow: 1cap;
+  margin-top: 1.25rem;
+}
+p {
+  margin-left: 7rem;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+.center-cell {
+  display: flex;
+  width: max-content;
+  margin-left: 15rem;
+}

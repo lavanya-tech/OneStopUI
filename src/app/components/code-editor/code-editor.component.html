@@ -1,0 +1,36 @@
+<div class="editor-wrapper" >
+    <div id="mode-dropdown">
+        <select id="mode-selector">
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+          <option value="c++">C++</option>
+          <option value="python">python</option>
+        </select>
+      </div>
+    <div>
+      
+      <div class="container">
+        <div id="editor"#editor>
+        </div>
+        <div class="result" *ngIf="showResult">
+          {{submissionResult}}
+        </div>
+      </div>
+          
+          
+          
+          <div class="sumission-buttons" >
+            <button class="console" style="float: left; margin:6px" (click)="showResult = !showResult">Console</button>
+            <div style="float: right;">
+              <button id="submit" style="float: right; margin:6px" (click)="submitSolution()">Submit</button>
+              <button id="run" style="float: right; margin:6px" >Run</button>
+            </div>
+          </div>
+
+        
+       
+   
+       
+        
+  </div>
+  

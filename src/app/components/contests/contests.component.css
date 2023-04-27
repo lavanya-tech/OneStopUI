@@ -1,0 +1,68 @@
+.contests-table{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+    padding: 16px
+}
+.nav{
+     background-color: rgb(22, 24, 24);
+     top: 80px;
+    padding-top: 10px;
+    display: flex;
+    text-shadow: 1cap;
+    margin-top: 1.5rem;
+    
+}
+.nav p{
+    margin-left: 2rem;
+    font-size: large;
+    color: white;
+}
+.mat-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mat-table th {
+  font-weight: 700;
+  padding: 16px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.mat-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.mat-name-cell {
+  font-weight: 700;
+  color: #0078d7;
+}
+
+.mat-index-cell {
+  width: 40px;
+}
+
+.mat-cell {
+  white-space: nowrap;
+}
+
+.mat-cell a {
+  color: #0078d7;
+}
+
+.mat-cell a:hover {
+  text-decoration: underline;
+}

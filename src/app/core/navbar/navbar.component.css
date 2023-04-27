@@ -1,0 +1,50 @@
+.container{
+    top: 80px;
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    -webkit-box-pack:justify;
+    
+}
+.nav{
+  background-color: rgb(243, 217, 169);
+}
+.site-brand{
+    /* display: flex; */
+    height: 60px
+}
+.site-brand img{
+    vertical-align: middle;
+    height: 40px;
+    padding-left: 10px;
+}
+.nav-right{
+    display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 0rem 53rem;
+  align-items: right;
+}
+
+.my-button {
+  background-color: rgba(172, 172, 235, 0.719);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+margin: 0.25rem auto;
+}
+.nav-item{
+  margin-left:4rem;
+}
+.nav-link.active {
+  text-decoration: underline;
+}
+.btn{
+  color: white;
+}
+.navbar-brand{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
