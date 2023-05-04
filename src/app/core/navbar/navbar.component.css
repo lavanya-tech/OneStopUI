@@ -7,7 +7,7 @@
     
 }
 .nav{
-  background-color: rgb(243, 217, 169);
+  background-color: rgb(212, 245, 243);
 }
 .site-brand{
     /* display: flex; */
@@ -27,7 +27,7 @@
 }
 
 .my-button {
-  background-color: rgba(172, 172, 235, 0.719);
+  background-color: rgba(160, 160, 235, 0.719);
   color: white;
   font-weight: bold;
   padding: 0.75rem 1rem;
@@ -45,6 +45,7 @@ margin: 0.25rem auto;
 }
 .navbar-brand{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 1rem;
 }
 
 

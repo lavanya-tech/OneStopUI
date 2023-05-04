@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MonacoEditorModule } from '@materia-ui/ngx-monaco-editor';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -48,6 +49,7 @@ import { ContestCardComponent } from './components/contest-card/contest-card.com
     MatIconModule,
     MatToolbarModule,
     ReactiveFormsModule,
+    MonacoEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

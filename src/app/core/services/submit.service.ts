@@ -3,25 +3,24 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SubmitService {
-  
+  private endpoint = 'https://example.com/api';
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  postData(data: any){
+    return this.http.post(this.endpoint, data);
+  }
   
-  submitInContest(contestId:any, questionId:any, userId:any, code:any){
+  submitInContest(contestId: any, questionId: any, userId: any, code: any) {
     const body = {
       contestId: contestId,
       questionId: questionId,
       userId: userId,
-      code: code
+      code: code,
     };
     return this.http.post('/api/submit', body);
-
   }
-  submitInPractice(questionId:any, userId:any, code:any){
-
-  }
-  
+  submitInPractice(questionId: any, userId: any, code: any) {}
 }

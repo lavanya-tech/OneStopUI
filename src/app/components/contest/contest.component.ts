@@ -10,7 +10,7 @@ import { Problem } from 'src/app/models/problem.model';
   styleUrls: ['./contest.component.css']
 })
 export class ContestComponent {
-  displayedColumns: string[] = ['id', 'name'];
+  displayedColumns: string[] = [ 'name'];
   problemsList!:      MatTableDataSource<Problem>
 
   constructor(private route: ActivatedRoute, private contestService: ContestService, private router: Router) {}

@@ -6,14 +6,20 @@
   display: flex;
   text-shadow: 1cap;
   margin-top: 1.25rem;
+  margin-left:20rem;
+    margin-right: 20rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
 }
 p {
-  margin-left: 7rem;
+  margin-left: 2rem;
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
 }
-.center-cell {
-  display: flex;
-  width: max-content;
-  margin-left: 15rem;
+.upcoming{
+  margin:0.25rem 20rem;
+}
+.mat-elevation-z8{
+ 
+  font: optional;
 }

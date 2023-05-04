@@ -3,32 +3,26 @@
         <div class="nav-left">
        <p class="slogan">Contest</p>
     </div>
-        <div class="table">
-           <table mat-table   class="mat-elevation-z8 upcoming" [dataSource]="problemsList">
+        <div class="upcoming">
+           <table mat-table   class="mat-elevation-z8" [dataSource]="problemsList">
 
                <!-- Code Column -->
-               <ng-container matColumnDef="id">
-                 <th mat-header-cell *matHeaderCellDef> Id </th>
-                <td mat-cell *matCellDef="let element"> {{element.id}}<div>
-                 
-                   
-                </div> </td>
-               </ng-container>
+          
              
                <!-- Name Column -->
-               <ng-container matColumnDef="name">
-                 <th mat-header-cell *matHeaderCellDef><div class="problem-div">Name</div> </th>
+               <ng-container matColumnDef="name" class="upcoming">
+                 
                  
                  <td mat-cell *matCellDef="let element">  
-                    <div class="problem-div"><span (click)="goToProblem(element.id)">{{element.title}}</span></div>
+                    <div class="problem-div">{{element.title}}</div>
                 </td>
                 
                </ng-container>
              
                
              
-               <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
-               <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+               
+               <tr mat-row *matRowDef="let element; columns: displayedColumns;" (click)="goToProblem(element.id)"></tr>
              </table>
         </div>
        
