@@ -6,11 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SubmitService {
-  private endpoint = 'https://example.com/api';
   constructor(private http: HttpClient) {}
 
-  postData(data: any){
-    return this.http.post(this.endpoint, data);
+  postData(data: any,url:string){
+    return this.http.post(url, data);
   }
   
   submitInContest(contestId: any, questionId: any, userId: any, code: any) {

@@ -2,63 +2,87 @@ import { Problem } from 'src/app/models/problem.model';
 
 export const problemList: Problem[] = [
   {
+    
     id: 1,
-    title: 'Return the sum of two Elemnts',
-    description:
-      'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
+    title: 'Reverse of the number',
+    points: 100,
+    description: 'Given an integer n.\n Return the reverse of the n',
+    constraints: '1 <= n <= 1000',
+    Input: '123',
+    Output: '321',
   },
   {
     id: 2,
     title: 'Tell whether the number is even or odd',
-    description:
-      'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+    points: 100,
+    description: 'Given a interger return whether it is even or odd',
+    constraints: '1 <= n <= 1000',
+    Input: '23',
+    Output: 'Odd',
   },
   {
     id: 3,
-    title: 'cycle in a linkedlist',
+    title: 'Palindromic string',
+    points: 100,
     description:
-      'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.',
+      'Given a string s.\n Return true if it is palindrome or else return false',
+      constraints: '1 < s.length() <= 1000',
+    Input: 'aba',
+    Output: 'true',
   },
   {
     id: 4,
-    title: 'sum of the subarray',
+    title: 'String contains vowels',
+    points: 100,
     description:
-      'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
+      'Given a string s.\n Return true if it contains vowels in it or else return false',
+      constraints: '1 < s.length() <= 1000',
+    Input: 'abacfasa',
+    Output: 'true',
   },
   {
     id: 5,
-    title: 'greatest subarray sum of the given length k',
-    description:
-      'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.',
+    title: 'Addition of Reverse',
+    points: 100,
+    description:'Given a interger num.\n Return the sum of the orginal number and its reverse',
+    constraints: '1 <= n <= 1000',
+    Input: '123',
+    Output: '444',
   },
   {
     id: 6,
-    title: 'positive bitwise summation',
-    description:
-      'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+    title: 'Product of Array Except Self',
+    points: 100,
+    description: "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.You must write an algorithm that runs in O(n) time and without using the division operation.",
+    constraints:"2 <= nums.length <= 10^5",
+    Input: "nums = [1,2,3,4]",
+    Output: "[24,12,8,6]"
   },
   {
     id: 7,
-    title: 'longest subarray sum',
-    description:
-      'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.',
+    title: 'Trapping Rain Water',
+    points: 40,
+    description: "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    constraints:"1 <= n <= 2 * 10",
+    Input: "[4,2,0,3,2,5]",
+    Output: "9"
   },
   {
     id: 8,
-    title: 'matrix multiplication using dynamic',
-    description:
-      'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.',
+    title: 'Longest Palindromic Subsequence',
+    points: 100,
+    description: "Given a string s, find the longest palindromic subsequence's length in s.A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.",
+    constraints:"1 <= s.length <= 1000",
+    Input: "bbbab",
+    Output: "4"
   },
   {
     id: 9,
-    title: 'fastest route to the destination',
-    description:
-      'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',
-  },
-  {
-    id: 10,
-    title: 'find the next permutation of the subarray',
-    description:
-      'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',
+    title: 'Longest Palindromic Substring',
+    points: 50,
+    description: "Given a string s, return the longest palindromic substring in s",
+    constraints:"1 <= s.length <= 1000",
+    Input: "babad",
+    Output: "bab"
   },
 ];

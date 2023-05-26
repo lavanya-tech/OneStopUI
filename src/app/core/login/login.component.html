@@ -2,13 +2,13 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
   <div class="form-group">
     <label for="username" class="m">Username:</label>
-    <input type="text" class="form-control " id="username" formControlName="username" placeholder="Enter your username">
+    <input type="text" class="form-control " id="username" formControlName="username" placeholder="Enter your username" required>
   </div>
   <br>
   <div class="form-group">
     <label for="password" class="m">Password:</label>
-    <input type="password" class="form-control " id="password" formControlName="password" placeholder="Enter your password">
+    <input type="password" class="form-control " id="password" formControlName="password" placeholder="Enter your password" required>
   </div><br>
-  <button type="submit" class="btn btn-primary " routerLink="/home">LOGIN</button>
+  <button type="submit" class="btn btn-primary " routerLink="/practice" (click)="onSubmit()">LOGIN</button>
 </form>
 </div>

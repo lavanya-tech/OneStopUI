@@ -1,7 +1,10 @@
 <div class="problem-component">
     <div cdkDrag>
-       <div class="problem-title"><strong>Return Statement</strong></div>
-       <div class="problem-description">Return a string "CodeMithra" as the output</div>
+       <div class="problem-title"><b>{{problem.title}}</b></div>
+       <div class="problem-description">{{problem.description}}</div>
+       <div class="problem-description">constraints: {{problem.constraints}}</div>
+       <div class="problem-description"><b>Input: </b>{{problem.Input}}</div>
+       <div class="problem-description"><b>Output: </b>{{problem.Output}}</div>
     </div>
     <app-code-editor [contestId]=" 'contestId' " [problemId]=" 'problemId' "  cdkDrag></app-code-editor>
 </div>

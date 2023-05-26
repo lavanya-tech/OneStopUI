@@ -17,13 +17,14 @@ export class CodeEditorComponent implements OnInit {
 
   modeSelector!: HTMLSelectElement;
   editor!: ace.Ace.Editor;
-  submissionResult: string =
-    'Mazama gouazcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDraMazama gouazcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDraMazama gouazcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDraMazama gouazcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDraMazama gouazcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragcdkDragoubiraProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.';
+  submissionResult: any ;
   status: string = 'accepted!';
   compileResult: string = 'CodeMithra';
-  showResult: boolean = false;
+  showResult: boolean = true;
   statusCheck: boolean = false;
   run: boolean = false;
+  selectedOption: string ='option1';
+  url:string="http://localhost:8081/compile";
 
   formData = {
     code: 'def run()',
@@ -37,13 +38,34 @@ export class CodeEditorComponent implements OnInit {
     private elementRef: ElementRef,
     private submitService: SubmitService
   ) {}
-
+  getEndpointUrl(): string {
+    switch (this.selectedOption) {
+      case 'option1':
+        return 'http://localhost:8081/compile';
+      case 'option2':
+        return 'http://127.0.0.1:8000/run';
+      case 'option3':
+        return 'http://127.0.0.1:8000/run';
+      default:
+        return 'http://localhost:8081/compile';
+    }
+  }
+    onChange(endpoint:any){
+      this.selectedOption=endpoint.target.value;
+      this.url=this.getEndpointUrl();
+    }
   OnSubmit() {
     const data = {
-      
-    };
-    this.submitService.postData(data).subscribe(
-      (response) => console.log('Success:', response),
+      "code": this.editor.getValue(),
+      "input": "",
+      "output": "",
+      "userId": "S23",
+      "questionId": "A12"
+  } 
+
+    this.submitService.postData(data,this.url).subscribe(
+      (response) => {this.submissionResult = JSON.stringify(response);
+      console.log(response)},
       (error) => console.log('Error:', error)
     );
   }

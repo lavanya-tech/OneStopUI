@@ -30,7 +30,7 @@ export class LoginComponent {
 
   onSubmit() {
     const { email, password } = this.loginForm.value;
-
+    console.log("hi");
     this.submitted = true;
   
     if (this.loginForm.invalid) {
@@ -41,7 +41,7 @@ export class LoginComponent {
       response => {
         // Handle successful login here
         console.log(response);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/practice']);
       },
       error => {
         // Handle login error here

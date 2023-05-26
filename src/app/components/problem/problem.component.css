@@ -3,3 +3,11 @@
     grid-template-columns: 1fr minmax(0, 1fr);
     grid-template-rows: 100%;
 }
+.problem-title{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.problem-description{
+    margin-top: 2%;
+    margin-left: 2%;
+}
